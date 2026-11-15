@@ -1,0 +1,6 @@
+{
+  "appId": "com.monopostolab.pitwall",
+  "appName": "PitWall Pro",
+  "webDir": "www",
+  "android": { "allowMixedContent": true }
+}
