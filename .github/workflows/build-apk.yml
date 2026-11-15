@@ -23,10 +23,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Prepare web folder
+       - name: Prepare web folder
         run: |
           mkdir -p www
-          cp index.html www/index.html
+          if [ -f index.html ]; then cp index.html www/index.html; else unzip -o index.zip -d www; fi
 
       - name: Add Android platform
         run: npx cap add android
